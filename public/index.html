@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <title>Simple Chat Application</title>
+	  <link rel="stylesheet" href="css/fontawesome-free-5.10.2-web/css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome-free-5.10.2-web/css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <!-- main container -->
+    <div class="container">
+
+      <!-- User Login -->
+      <div class="row" id="userformarea">
+        <div class="form-area">
+          <form action="" id="userForm">
+            <div class="form">
+              <label id="foruser">Username</label>
+              <input type="text" class="form-control" id="user" placeholder="Enter Username">
+            </div>
+            
+            <input type="submit" class="btn" value="Login">
+          </form>
+        </div>
+      </div>
+
+
+      <!-- Chat body -->
+      <section id="messagearea">
+        <!-- header -->
+        <div class="chatheader">
+          Chat Application
+        </div>
+        <!-- section for online users -->
+        <div class="online-users">
+          <h1>Online Users</h1>
+          <ul class="list-group" id='users'></ul>
+        </div>
+
+        <!-- section for messages -->
+        <div class="chat-container">
+          <div class="chat-area" id="chat">
+            
+          </div>
+
+          <div class="chat-input">
+            <form action="" method="get" id="messageForm">
+              <div class="chat-form">
+                <div class="chat-field">
+                  <textarea class="form-control" name="text" id="message"></textarea>
+                </div>
+
+                <div class="fileicon1">
+                  <input type="file" id="image" class="sendFile" />
+                </div>
+                
+                <div class="fileicon2">
+                  <input type="file" id="otherfile" class="sendFile" />
+                </div>
+              </div>
+              <button type="submit" class="button" id="submit"><i class="fas fa-paper-plane"></i></button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="/scripts/jquery.js"></script>
+    <script src="/scripts/socket.io.js"></script>
+    <script src="/scripts/app.js"></script>
+  </body>
+</html>

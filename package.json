@@ -1,0 +1,16 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "description": "Simple chat application",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tanbin",
+  "license": "ISC",
+  "dependencies": {
+    "express": "*",
+    "express-fileupload": "^1.1.6",
+    "socket.io": "*"
+  }
+}
